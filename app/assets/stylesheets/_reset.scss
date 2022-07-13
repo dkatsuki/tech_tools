@@ -21,6 +21,11 @@ time, mark, audio, video, input {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
+
+html {
+	font-size: 16px;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -45,7 +50,8 @@ ul {
 	list-style: none;
 }
 img {
-	height: auto;
+	height: 100%;
+	width: auto;
 }
 a {
 	text-decoration: none;

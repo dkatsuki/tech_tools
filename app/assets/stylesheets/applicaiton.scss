@@ -1,4 +1,27 @@
 @import "reset";
+@import "common";
+
+#site-header {
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $main_color;
+	min-height: 40px;
+	height: 8vh;
+	padding: 0 0.6rem;
+
+	> div:first-child {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+
+		> img {
+			height: 80%;
+		}
+	}
+}
 
 @media screen and (max-width: 715px) {
 	/* 715pxまでの幅の場合に適応される */
