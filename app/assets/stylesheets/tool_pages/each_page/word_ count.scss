@@ -1,0 +1,53 @@
+@import "common";
+
+.word_count {
+	> div:first-child {
+		margin-bottom: 16px;
+	}
+
+	> div:last-child {
+		display: flex;
+		justify-content: space-between;
+		height: 40vh;
+		min-height: 300px;
+
+		> * {
+			width: 48%;
+		}
+
+		> textarea {
+			resize: none;
+		}
+
+		> div:last-child {
+			> div:first-child {
+				margin-bottom: 12px;
+			}
+		}
+	}
+
+	.count-results-container {
+		> div {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: solid 1px $black;
+			padding-right: 2%;
+			margin-bottom: 4px;
+		}
+	}
+}
+
+@media screen and (max-width: 715px) {
+	.word_count {
+		> div:last-child {
+			display: block;
+			height: 14vh;
+			min-height: 0px;
+
+			> * {
+				width: 100%;
+			}
+		}
+	}
+}

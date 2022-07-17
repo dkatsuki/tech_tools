@@ -16,6 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_163629) do
 
   create_table "tool_pages", force: :cascade do |t|
     t.string "name", null: false
+    t.string "partial_name", null: false
     t.string "title", null: false
     t.text "description", null: false
     t.datetime "created_at", null: false

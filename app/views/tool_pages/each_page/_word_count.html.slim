@@ -1,0 +1,43 @@
+div.word_count data-tool-name=tool_page.partial_name
+	div
+		div
+			p
+				| 入力欄に文字を記入すると自動で文字数を数えてくれます。
+				| やりなおしたい場合はリセットボタンを押してください。
+	div
+		textarea.height_100percent data-counting-word-textarea="true"
+		div.height_100percent
+			div.display_flex.justify-content_flex-start
+				div.button data-reset-word-button="true"
+					p リセット
+			div.count-results-container data-count-results-container="true"
+				div
+					div
+						p 文字数
+					div
+						p.font-size_120rem
+							| 0
+				div
+					div
+						p 文字数（改行&空白抜き）
+					div
+						p.font-size_120rem
+							| 0
+				div
+					div
+						p 文字数（改行抜き）
+					div
+						p.font-size_120rem
+							| 0
+				div
+					div
+						p 文字数（空白抜き）
+					div
+						p.font-size_120rem
+							| 0
+				div
+					div
+						p 行数
+					div
+						p.font-size_120rem
+							| 0

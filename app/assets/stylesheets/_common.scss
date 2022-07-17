@@ -1,5 +1,83 @@
 $main_color: #ff5d00;
+$black: black;
+$white: white;
+
+////////////////////////////
+
+.debug {
+	background-color: pink;
+	border: 1px solid $black;
+}
 
 .display_flex {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.justify-content_flex-start {
+	justify-content: flex-start;
+}
+
+.full-size {
+	width: 100%;
+	height: 100%;
+}
+
+div.button {
+	cursor: pointer;
+	border: solid 1px $black;
+	background-color: $black;
+	padding: 0 8px;
+
+	> p {
+		font-weight: bold;
+		color: $white;
+	}
+}
+
+////////////////////////////
+
+.width_100percent {
+	width: 100%;
+}
+
+.width_50percent {
+	width: 50%;
+}
+
+.width_48percent {
+	width: 48%;
+}
+
+.width_40percent {
+	width: 40%;
+}
+
+.height_100percent {
+	height: 100%;
+}
+
+.height_50percent {
+	height: 50%;
+}
+
+.background-color_black {
+	background-color: $black;
+}
+
+.background-color_white {
+	background-color: $white;
+}
+
+.background-color_main {
+	background-color: $main_color;
+}
+
+p.font-size_120rem {
+	font-size: 1.2rem;
+}
+
+p.font-weight_bold {
+	font-size: 1.2rem;
 }
