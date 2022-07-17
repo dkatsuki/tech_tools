@@ -15,7 +15,8 @@ gem "redis", "~> 4.0"
 gem 'unicorn'
 gem 'slim'
 gem 'html2slim'
-gem "sassc-rails", '2.0.0'
+gem "sassc", '~>2.1.0'
+gem "sassc-rails"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
