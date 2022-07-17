@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: tech_tools_production
-  username: tech_tools
-  password: <%= ENV["TECH_TOOLS_DATABASE_PASSWORD"] %>
+  port: <%= Rails.application.credentials.config[:postgres][:port] %>
+  host: <%= Rails.application.credentials.config[:postgres][:host] %>
