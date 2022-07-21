@@ -87,12 +87,9 @@ select {
 	-webkit-appearance: menulist-button;
 }
 @media screen and (max-width: 767px) {
-	// html {
-	// 	width: 100vw;
-	// 	overflow-x: hidden;
-	// }
-	body {
+	body > * {
 		width: 100vw;
 		overflow-x: hidden;
+		overflow-y: visible;
 	}
 }
