@@ -1,6 +1,8 @@
 @import "common";
 
-.word_count {
+#word_count {
+	width: 100%;
+
 	> div:first-child {
 		margin-bottom: 16px;
 	}
@@ -36,17 +38,19 @@
 			margin-bottom: 4px;
 		}
 	}
-}
 
-@media screen and (max-width: 715px) {
-	.word_count {
+	@media screen and (max-width: 767px) {
 		> div:last-child {
 			display: block;
 			height: 14vh;
 			min-height: 0px;
-
+			width: 100%;
 			> * {
 				width: 100%;
+			}
+
+			> textarea {
+				width: 94vw;
 			}
 		}
 	}
