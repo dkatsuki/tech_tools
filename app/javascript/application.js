@@ -8,16 +8,16 @@ const functionList = {
 }
 
 window.addEventListener('turbolinks:load', () => {
-	const body = document.getElementsByTagName('body')[0];
-	const func = functionList[`${body.dataset.controller}#${body.dataset.action}`];
+	const container = document.getElementById('root');
+	const func = functionList[`${container.dataset.controller}#${container.dataset.action}`];
 	if (!!func) {
 		func();
 	}
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-	const body = document.getElementsByTagName('body')[0];
-	const func = functionList[`${body.dataset.controller}#${body.dataset.action}`];
+	const container = document.getElementById('root');
+	const func = functionList[`${container.dataset.controller}#${container.dataset.action}`];
 	if (!!func) {
 		func();
 	}

@@ -17,7 +17,7 @@ const func = () => {
 		return(document.querySelectorAll('[data-count-results-container] > div > div:last-child > p'));
 	}
 
-	textArea.onkeyup = () => {
+	const countAndDisplay = () => {
 		const resultElements = getResultElements();
 		const allWordCount = countCollectStringLength(textArea.value);
 		const newLineCount = countNewLine(textArea.value);
@@ -29,6 +29,8 @@ const func = () => {
 		resultElements[3].textContent = (allWordCount - whiteSpageCount);
 		resultElements[4].textContent = (newLineCount);
 	};
+
+	textArea.oninput = countAndDisplay;
 
 	const resetWord = () => {
 		textArea.value = '';
