@@ -8,11 +8,12 @@ html
     = csp_meta_tag
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_importmap_tags
-  body class="#{controller.controller_name} #{controller.action_name}" data-controller=controller.controller_name data-action=controller.action_name
-    div#site-header
-      div
-        img src="/logo.svg"
-      / div
-    = yield
-    div#site-footer
-      p ©️ Flavor 2022
+  body
+    div#root class="#{controller.controller_name} #{controller.action_name}" data-controller=controller.controller_name data-action=controller.action_name
+      div#site-header
+        div
+          img src="/logo.svg"
+        / div
+      = yield
+      div#site-footer
+        p ©️ Flavor 2022

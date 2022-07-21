@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	box-sizing : border-box;
 	font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, "Helvetica Neue", sans-serif;
 	line-height: 1.6;
 }
@@ -87,9 +88,9 @@ select {
 	-webkit-appearance: menulist-button;
 }
 @media screen and (max-width: 767px) {
-	body > * {
-		width: 100vw;
+	#root {
+		width: 100%;
 		overflow-x: hidden;
-		overflow-y: visible;
+		min-height: 100vh;
 	}
 }
