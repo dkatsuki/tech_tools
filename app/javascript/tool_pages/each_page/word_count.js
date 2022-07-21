@@ -30,7 +30,9 @@ const func = () => {
 		resultElements[4].textContent = (newLineCount);
 	};
 
-	textArea.oninput = countAndDisplay;
+	// textArea.oninput = countAndDisplay;
+
+	textArea.addEventListener('input', countAndDisplay)
 
 	const resetWord = () => {
 		textArea.value = '';
