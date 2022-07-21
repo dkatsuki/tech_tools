@@ -1,0 +1,8 @@
+- provide(:title, '便利ツール一覧')
+- provide(:description, '便利ツールの一覧ページです！文字数カウントなど便利なツールがツール名から検索できます！')
+div#main-container
+	h1 便利ツール一覧
+	div
+		- @tool_pages.each do |tool_page|
+			div
+				= link_to(tool_page.name, action: :show, id: tool_page)
