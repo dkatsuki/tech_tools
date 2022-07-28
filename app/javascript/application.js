@@ -7,19 +7,12 @@ const functionList = {
 	"tool_pages#show": toolPagesShow,
 }
 
-window.addEventListener('turbolinks:load', () => {
+const onLoadFunction = () => {
 	const container = document.getElementById('root');
 	const func = functionList[`${container.dataset.controller}#${container.dataset.action}`];
 	if (!!func) {
 		func();
 	}
-})
+}
 
-window.addEventListener('DOMContentLoaded', () => {
-	const container = document.getElementById('root');
-	const func = functionList[`${container.dataset.controller}#${container.dataset.action}`];
-	if (!!func) {
-		func();
-	}
-})
-
+window.addEventListener('turbo:load', onLoadFunction)
