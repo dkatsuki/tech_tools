@@ -17,6 +17,7 @@ gem 'slim'
 gem 'html2slim'
 gem "sassc", '~>2.1.0'
 gem "sassc-rails"
+gem 'rack-cors'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
