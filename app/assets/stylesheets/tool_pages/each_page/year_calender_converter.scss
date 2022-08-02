@@ -1,0 +1,64 @@
+@import "common";
+
+#year_calender_converter {
+	width: 100%;
+
+	select {
+		padding: 2px;
+	}
+
+	> div:nth-child(2) {
+		width: 100%;
+		align-items: flex-end;
+
+		p {
+			white-space: nowrap;
+		}
+
+		> div > div > input {
+			width: 40%;
+		}
+
+		> div:last-child {
+			> div {
+				width: 48%;
+			}
+		}
+	}
+
+	div:last-child {
+		> div {
+			width: 100%;
+			> div {
+				width: 25%;
+			}
+		}
+	}
+
+	.table {
+		> div.display_none {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		> div:nth-child(2) {
+			flex-wrap: wrap;
+			gap: 10px 0;
+			justify-content: space-between;
+			> div {
+				width: 48vw;
+			}
+
+			> div > div > input {
+				width: 70%;
+			}
+
+			> div:last-child {
+				> div {
+					width: 48%;
+				}
+			}
+		}
+	}
+}

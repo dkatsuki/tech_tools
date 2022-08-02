@@ -1,5 +1,6 @@
 - provide(:title, @tool_page.title)
 - provide(:description, @tool_page.description)
 div#main-container
-	h1 = @tool_page.name
+	div.short-margin-bottom
+		h1 = @tool_page.name
 	= render partial: "/tool_pages/each_page/#{@tool_page.partial_name}", locals: { tool_page: @tool_page }

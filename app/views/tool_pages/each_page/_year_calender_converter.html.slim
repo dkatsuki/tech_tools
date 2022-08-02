@@ -1,0 +1,37 @@
+div#year_calender_converter data-tool-name=tool_page.partial_name
+	div.short-margin-bottom
+		p
+			| 西暦/和暦/年齢のいずれかを入力して「調べる」ボタンを押してください。
+			| やりなおしたい場合はリセットボタンを押してください。
+	div.short-margin-bottom.display_flex.justify-content_flex-start.width_100percent
+		div
+			label 西暦
+			div.display_flex.justify-content_flex-start
+				input.short-margin-right type="number" data-name="seileki-input"
+				p 年
+		div
+			label 和暦
+			div.display_flex.justify-content_flex-start
+				select.short-margin-right name="waleki-select" data-name="waleki-select"
+				input.short-margin-right type="number" data-name="waleki-input"
+				p 年
+		div
+			label 年齢
+			div.display_flex.justify-content_flex-start
+				input.short-margin-right type="number" data-name="age-input"
+				p 歳
+		div.display_flex.justify-content_flex-start
+			div.button.short-margin-right data-name="search-button"
+				p 調べる
+			div.button data-name="reset-button"
+				p リセット
+	div.table data-year-calender-table="true"
+		div
+			div
+				p 西暦
+			div
+				p 和暦
+			div
+				p 年齢
+			div
+				p 干支

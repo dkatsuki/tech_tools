@@ -67,6 +67,10 @@ table {
 textarea {
 	font-size: 1.0rem;
 }
+input {
+	border: 1px solid  black;
+	padding-left: 4px;
+}
 input[type="submit"], input[type="button"] {
 	border-radius: 0;
 	-webkit-box-sizing: content-box;
@@ -86,6 +90,7 @@ input[type="button"]::focus {
 }
 select {
 	-webkit-appearance: menulist-button;
+	border: 1px solid  black;
 }
 @media screen and (max-width: 767px) {
 	#root {
