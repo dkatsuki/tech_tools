@@ -15,7 +15,7 @@ gem "redis", "~> 4.0"
 gem 'unicorn'
 gem 'slim'
 gem 'html2slim'
-gem "sassc", '~>2.1.0'
+gem "sassc"
 gem "sassc-rails"
 gem 'rack-cors'
 

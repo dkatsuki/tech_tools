@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "文字数カウント",
+    "partial_name": "word_count",
+    "title": "文字数カウント",
+    "description": "description"
+  },
+  {
+    "id": 2,
+    "name": "文字数カウント",
+    "partial_name": "word_count",
+    "title": "文字数カウント",
+    "description": "description"
+  }
+]
